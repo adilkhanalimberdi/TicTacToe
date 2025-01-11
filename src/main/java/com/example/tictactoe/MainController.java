@@ -100,9 +100,8 @@ public class MainController {
     boolean checkDraw() {
         boolean draw = true;
         for (Button btn : board) {
-            if (btn.getText().isEmpty()) {
+            if (btn.getText().isEmpty())
                 draw = false;
-            }
         }
         return draw;
     }
