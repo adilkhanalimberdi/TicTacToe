@@ -100,15 +100,15 @@ public class MainController {
     boolean checkDraw() {
         boolean draw = true;
         for (Button btn : board) {
-            if (btn.getText().isEmpty()) {
+            if (btn.getText().isEmpty())
                 draw = false;
-            }
         }
         return draw;
     }
 
     void gameOver(String str) {
         Alert alert = new Alert(AlertType.INFORMATION, str, ButtonType.OK);
+        alert.showAndWait();
         restartButton.setVisible(true);
         gameOver = true;
         info.setText(str);
